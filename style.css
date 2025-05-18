@@ -306,4 +306,7 @@ input::placeholder{
     #main-container{
         background:url('background-desktop.png');
     }
+    .squiggly-top{
+        display:none;
+    }
 }
