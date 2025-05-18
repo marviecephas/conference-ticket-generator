@@ -286,7 +286,7 @@ input::placeholder{
 }
 @media (min-width:800px){
     #main-container{
-        background:url('background-tablet.png');
+        background:url('background-desktop.png');
     }
     .main-heading, .main-paragraph{
         max-width:600px;
@@ -300,11 +300,6 @@ input::placeholder{
     }
     .ticket-number{
         top:85px;
-    }
-}
-@media (min-width:1200px){
-    #main-container{
-        background:url('background-desktop.png');
     }
     .squiggly-top{
         display:none;
