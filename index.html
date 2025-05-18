@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>conference ticket generator</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "main-container">
+        <img src = "pattern-circle.svg" class = "bg-img bg-circles">
+        <div class = "bg-img bg-lines"></div>
+        <img src = "pattern-squiggly-line-bottom-mobile-tablet.svg" class = "bg-img squiggly-bottom">
+        <img src = "pattern-squiggly-line-top.svg" class = "bg-img squiggly-top" id = "squiggly-top">                
+        <div class = "logo-header">
+            <img src = "logo-mark.svg" class = "head-logo">
+            <h3 class = "logo-heading capitalize">coding conf</h3>
+        </div>
+        <h1 class = "main-heading">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class = "main-paragraph">Secure your spot at next year's biggest coding conference</p>
+        <div class = "ticket-form-container">
+            <div class = "form-container">
+                <p class = "label capitalize">upload avatar</p>
+                <div class = "upload-container">
+                    <input type = "file" accept = ".jpg, .png" class = "input-avatar" hidden>
+                    <div class = "sub-upload-container">
+                        <img src = "icon-upload.svg" class = "upload-icon">
+                        <p class = "upload-paragraph">Drag and drop or click to upload</p>
+                    </div>
+                    <div class = "image-preview-container">
+                        <img src = "image-avatar.jpg" class = "avatar-preview">
+                        <div class = "update-upload">
+                            <p class = "rmv-btn">Remove image</p>
+                            <p class = "chn-btn">Change image</p>
+                        </div>
+                    </div>                        
+                </div>
+                <p class = "input-state state-image"><img src = "icon-info.svg">Upload your photo (JPG or PNG, max size: 500KB).</p>
+            </div>
+            <div class = "form-container">
+                <p class = "label capitalize">full name</p>
+                <input type = "text" class = "input-fname" required>
+                <p class = "input-state null-state state-fname"><img src = "icon-info-red.svg"></p>
+            </div>
+            <div class = "form-container">
+                <p class = "label capitalize">email address</p>
+                <input type = "email" class = "input-email" placeholder = "example@email.com">
+                <p class = "input-state null-state state-email"><img src = "icon-info-red.svg"></p>
+            </div>
+            <div class = "form-container">
+                <p class = "label capitalize">github username</p>
+                <input type = "text" class = "input-username" placeholder = "@yourusername" required>
+                <p class = "input-state null-state state-username"><img src = "icon-info-red.svg"></p>
+            </div>
+            <p class = "generate-btn capitalize">generate my ticket</p>
+            <div class = "ticket-container">
+                <img src = "pattern-ticket.svg" class = "ticket-border">
+                <p class = "ticket-number">#01609</p>
+                <div class = "sub-ticket-container">
+                    <img src = "logo-mark.svg" class = "ticket-logo">
+                    <div class = "event-info">
+                        <h2 class = "event-heading capitalize">coding conf</h2>
+                        <p class = "event-paragraph">Jan 31, 2025 / Austin, TX</p>
+                    </div>
+                </div>
+                <div class = "attendee-container">
+                    <img src = "image-avatar.jpg" class = "attendee-img">
+                    <div class = "attendee-info">
+                        <h2 class = "attendee-fname capitalize">some name</h2>
+                        <p class = "attendee-github"><img src = "icon-github.svg">@someusername</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>
